@@ -1,13 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name angularApp
- * @description
- * # angularApp
- *
- * Main module of the application.
- */
 angular
   .module('kaboodleApp', [
     'ngAnimate',
@@ -22,7 +14,7 @@ angular
         templateUrl: 'views/allcontests.html',
         controller: 'AllContestsCtrl'
       })
-      .when('/contest', {
+      .when('/allcontests/:contestId', {
         templateUrl: 'views/contest.html',
         controller: 'ContestCtrl'
       })
