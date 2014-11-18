@@ -8,7 +8,7 @@
  * Controller of the angularApp
  */
 angular.module('kaboodleApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('EditCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('angularApp', [
+  .module('kaboodleApp', [
     'ngAnimate',
     'ngCookies',
     'ngMessages',
@@ -18,15 +18,27 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      .when('/allcontests', {
+        templateUrl: 'views/allcontests.html',
+        controller: 'AllContestsCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/contest', {
+        templateUrl: 'views/contest.html',
+        controller: 'ContestCtrl'
+      })
+      .when('/add', {
+        templateUrl: 'views/add.html',
+        controller: 'AddCtrl'
+      })
+      .when('/edit', {
+        templateUrl: 'views/edit.html',
+        controller: 'EditCtrl'
+      })
+      .when('/delete', {
+        templateUrl: 'views/delete.html',
+        controller: 'DeleteCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/allcontests'
       });
   });

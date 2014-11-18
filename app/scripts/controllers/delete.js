@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name angularApp.controller:AboutCtrl
+ * @name angularApp.controller:MainCtrl
  * @description
- * # AboutCtrl
+ * # MainCtrl
  * Controller of the angularApp
  */
 angular.module('kaboodleApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('DeleteCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
