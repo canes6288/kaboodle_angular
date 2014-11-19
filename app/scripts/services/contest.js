@@ -12,40 +12,6 @@ angular.module('kaboodleApp')
     this.selectedContest = contest;
   };
 
-  this.setQuestions = function(contest) {
-    this.questions = this.selectedContest.question_file;
-  };
-
-  this.contests = [
-    {
-      id : 1,
-      title : 'Red Bull\'s Piedmont Park Event',
-      description : 'Red Bull gives you wings!',
-      end_date : '11/22/2014',
-      prize : 1000,
-      company : 'Red Bull',
-      question_file : this.redBullQuestions
-    },
-    {
-      id : 2,
-      title : 'Blue Egg\'s Piedmont Park Event',
-      description : 'Red Bull gives you wings!',
-      end_date : '11/22/2014',
-      prize : 1000,
-      company : 'Red Bull',
-      question_file : this.blueEggQuestions      
-    },
-    {
-      id : 3,
-      title : 'Black Cat\'s Piedmont Park Event',
-      description : 'Red Bull gives you wings!',
-      end_date : '11/22/2014',
-      prize : 1000,
-      company : 'Red Bull',
-      question_file : this.blackCatQuestions      
-    }
-  ];
-
   this.redBullQuestions = [
     {
       name: 'name',
@@ -105,5 +71,36 @@ angular.module('kaboodleApp')
       input_type: 'message',
       question_number: 3,
     }
-  ]
+  ];
+
+  this.contests = [
+    {
+      id : 1,
+      title : 'Red Bull\'s Piedmont Park Event',
+      description : 'Red Bull gives you wings!',
+      end_date : '11/22/2014',
+      prize : 1000,
+      company : 'Red Bull',
+      question_file : this.redBullQuestions
+    },
+    {
+      id : 2,
+      title : 'Blue Egg\'s Piedmont Park Event',
+      description : 'Red Bull gives you wings!',
+      end_date : '11/22/2014',
+      prize : 1000,
+      company : 'Red Bull',
+      question_file : this.blueEggQuestions
+    },
+    {
+      id : 3,
+      title : 'Black Cat\'s Piedmont Park Event',
+      description : 'Red Bull gives you wings!',
+      end_date : '11/22/2014',
+      prize : 1000,
+      company : 'Red Bull',
+      question_file : this.blackCatQuestions
+    }
+  ];
+
 });
