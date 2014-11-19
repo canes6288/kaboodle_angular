@@ -6,12 +6,14 @@
   <div ng-switch="currentQuestion.input_type">
     <form name="questionForm" novalidate>
       <div ng-switch-when="text">
-        <textarea class="form-control" ng-model="answer"></textarea>
+        <textarea class="form-control" ng-model="data.answer"></textarea>
         <div class="question-button">
-          <button class="btn btn-primary btn-md" ng-click="goToNextQuestion(answer);" ng-disabled="questionForm.$invalid">next question</button>
+          <button class="btn btn-primary btn-md" ng-click="goToNextQuestion();" ng-disabled="questionForm.$invalid">next question</button>
         </div>
       </div>
     </form>
+    <pre>Answers: {{ answers | json }}</pre>
+    <pre>Answer:  {{ data.answer | json }}</pre>
   </div>
   <div ng-show="isDone()" class="text-center">
     <p>Review your marketing plan and submit your entry</p><br />
