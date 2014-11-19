@@ -1,17 +1,12 @@
-<div class="jumbotron">
+<div class="row">
   <h1>Contests</h1>
   <p class="lead">
-    <img src="" alt=""><br>
     Here's a list of all our contests!
   </p>
-  <div>
-    <div ng-repeat="contest in contests">
-      <h1>{{ contest.title }}</h1>
-      <p>{{ contest.prize | currency }}</p>
-      <p>{{ contest.end_date }}</p>
-      <a href="#/allcontests/{{ contest.id }}"><p class="btn btn-lg btn-success" ng-click="selectContest(contest)">Details</p></a>
-    </div>
-  </div>
 </div>
-
-
+<div ng-repeat="contest in contests">
+  <h3>{{ contest.title }}</h3>
+  <p>{{ contest.prize | currency }}</p>
+  <p>{{ contest.end_date }}</p>
+  <a href="#/allcontests/{{ contest.id }}"><p class="btn btn-md btn-success" ng-click="selectContest(contest)">Details</p></a>
+</div>

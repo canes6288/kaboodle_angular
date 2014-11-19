@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('kaboodleApp')
-.controller('AllContestsCtrl', ["$scope", "contestService",
+.controller('AllContestsCtrl', ['$scope', 'contestService',
                                function ($scope, contestService) {
 
   $scope.getContests = function() {

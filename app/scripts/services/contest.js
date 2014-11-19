@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('kaboodleApp')
 .service('contestService', function($http) {
 
@@ -13,50 +15,50 @@ angular.module('kaboodleApp')
   this.contests = [
     {
       id :  1,
-      title : "Red Bull's Piedmont Park Event",
-      description : "Red Bull gives you wings!",
-      end_date : "11/22/2014",
+      title : 'Red Bull\'s Piedmont Park Event',
+      description : 'Red Bull gives you wings!',
+      end_date : '11/22/2014',
       prize : 1000,
-      company : "Red Bull"
+      company : 'Red Bull'
     },
     {
       id :  2,
-      title : "Red Eggs's Piedmont Park Event",
-      description : "Red Bull gives you wings!",
-      end_date : "11/22/2014",
+      title : 'Blue Egg\'s Piedmont Park Event',
+      description : 'Red Bull gives you wings!',
+      end_date : '11/22/2014',
       prize : 1000,
-      company : "Red Bull"
+      company : 'Red Bull'
     },
     {
       id :  3,
-      title : "Red Fish's Piedmont Park Event",
-      description : "Red Bull gives you wings!",
-      end_date : "11/22/2014",
+      title : 'Green Fish\'s Piedmont Park Event',
+      description : 'Red Bull gives you wings!',
+      end_date : '11/22/2014',
       prize : 1000,
-      company : "Red Bull"
+      company : 'Red Bull'
     },
     { id :  4,
-      title : "Red Rhino's Piedmont Park Event",
-      description : "Red Bull gives you wings!",
-      end_date : "11/22/2014",
+      title : 'Purple Rhino\'s Piedmont Park Event',
+      description : 'Red Bull gives you wings!',
+      end_date : '11/22/2014',
       prize : 1000,
-      company : "Red Bull"
+      company : 'Red Bull'
     },
     {
       id :  5,
-      title : "Red Dog's Piedmont Park Event",
-      description : "Red Bull gives you wings!",
-      end_date : "11/22/2014",
+      title : 'Yellow Dog\'s Piedmont Park Event',
+      description : 'Red Bull gives you wings!',
+      end_date : '11/22/2014',
       prize : 1000,
-      company : "Red Bull"
+      company : 'Red Bull'
     },
     {
       id :  6,
-      title : "Red Cat's Piedmont Park Event",
-      description : "Red Bull gives you wings!",
-      end_date : "11/22/2014",
+      title : 'Black Cat\'s Piedmont Park Event',
+      description : 'Red Bull gives you wings!',
+      end_date : '11/22/2014',
       prize : 1000,
-      company : "Red Bull"
+      company : 'Red Bull'
     }
   ];
 
