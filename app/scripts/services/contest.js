@@ -12,54 +12,98 @@ angular.module('kaboodleApp')
     this.selectedContest = contest;
   };
 
+  this.setQuestions = function(contest) {
+    this.questions = this.selectedContest.question_file;
+  };
+
   this.contests = [
     {
-      id :  1,
+      id : 1,
       title : 'Red Bull\'s Piedmont Park Event',
       description : 'Red Bull gives you wings!',
       end_date : '11/22/2014',
       prize : 1000,
-      company : 'Red Bull'
+      company : 'Red Bull',
+      question_file : this.redBullQuestions
     },
     {
-      id :  2,
+      id : 2,
       title : 'Blue Egg\'s Piedmont Park Event',
       description : 'Red Bull gives you wings!',
       end_date : '11/22/2014',
       prize : 1000,
-      company : 'Red Bull'
+      company : 'Red Bull',
+      question_file : this.blueEggQuestions      
     },
     {
-      id :  3,
-      title : 'Green Fish\'s Piedmont Park Event',
-      description : 'Red Bull gives you wings!',
-      end_date : '11/22/2014',
-      prize : 1000,
-      company : 'Red Bull'
-    },
-    { id :  4,
-      title : 'Purple Rhino\'s Piedmont Park Event',
-      description : 'Red Bull gives you wings!',
-      end_date : '11/22/2014',
-      prize : 1000,
-      company : 'Red Bull'
-    },
-    {
-      id :  5,
-      title : 'Yellow Dog\'s Piedmont Park Event',
-      description : 'Red Bull gives you wings!',
-      end_date : '11/22/2014',
-      prize : 1000,
-      company : 'Red Bull'
-    },
-    {
-      id :  6,
+      id : 3,
       title : 'Black Cat\'s Piedmont Park Event',
       description : 'Red Bull gives you wings!',
       end_date : '11/22/2014',
       prize : 1000,
-      company : 'Red Bull'
+      company : 'Red Bull',
+      question_file : this.blackCatQuestions      
     }
   ];
 
+  this.redBullQuestions = [
+    {
+      name: 'name',
+      label: 'What is Red Bull?',
+      input_type: 'text',
+      question_number: 1,
+    },
+    {
+      name: 'skill',
+      label: 'How would you implement this idea?',
+      input_type: 'text',
+      question_number: 2,
+    },
+    {
+      name: 'thankyou',
+      label: 'Thank you!',
+      input_type: 'message',
+      question_number: 3,
+    }
+  ]
+  this.blueEggQuestions = [
+    {
+      name: 'name',
+      label: 'What is Blue Egg?',
+      input_type: 'text',
+      question_number: 1,
+    },
+    {
+      name: 'skill',
+      label: 'How would you implement this idea?',
+      input_type: 'text',
+      question_number: 2,
+    },
+    {
+      name: 'thankyou',
+      label: 'Thank you!',
+      input_type: 'message',
+      question_number: 3,
+    }
+  ]
+  this.blackCatQuestions = [
+    {
+      name: 'name',
+      label: 'What is Black Cat?',
+      input_type: 'text',
+      question_number: 1,
+    },
+    {
+      name: 'skill',
+      label: 'How would you implement this idea?',
+      input_type: 'text',
+      question_number: 2,
+    },
+    {
+      name: 'thankyou',
+      label: 'Thank you!',
+      input_type: 'message',
+      question_number: 3,
+    }
+  ]
 });

@@ -18,17 +18,21 @@ angular
         templateUrl: 'views/contest.html',
         controller: 'ContestCtrl'
       })
-      .when('/add', {
-        templateUrl: 'views/add.html',
-        controller: 'AddCtrl'
+      .when('/addcontest', {
+        templateUrl: 'views/addcontest.html',
+        controller: 'AddContestCtrl'
       })
-      .when('/edit', {
-        templateUrl: 'views/edit.html',
-        controller: 'EditCtrl'
+      .when('/editcontest', {
+        templateUrl: 'views/editcontest.html',
+        controller: 'EditContestCtrl'
       })
-      .when('/delete', {
-        templateUrl: 'views/delete.html',
-        controller: 'DeleteCtrl'
+      .when('/deletecontest', {
+        templateUrl: 'views/deletecontest.html',
+        controller: 'DeleteContestCtrl'
+      })
+      .when('/addsubmission', {
+        templateUrl: 'views/addsubmission.html',
+        controller: 'AddSubmissionCtrl'
       })
       .otherwise({
         redirectTo: '/allcontests'
