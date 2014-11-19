@@ -1,7 +1,5 @@
 #KABOODLE in AngularJS
      
-<br />
-
 
 ##Overview
 
